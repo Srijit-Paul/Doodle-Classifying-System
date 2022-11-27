@@ -4,6 +4,8 @@ import Back from "./Back";
 import { height } from "@mui/system";
 
 function Header(props) {
+  let vis = (props.current == "Home") ? "hidden" : "";
+  console.log(vis);
   return (
     <header
       style={{
@@ -17,7 +19,7 @@ function Header(props) {
         height: "10vh"
       }}
     >
-      {props.current!="Home" && <Back goBack={props.goBack} />}
+      <Back goBack={props.goBack} visible={vis} />
       <h1
         style={{
           display: "flex",

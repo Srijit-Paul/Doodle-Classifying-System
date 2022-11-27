@@ -43,7 +43,7 @@ function Resize(props) {
 
   return (
     // <AddIcon />
-    <button onClick={resize}>{fullscreen?<i class="fa-solid fa-compress"></i>:<i class="fa-solid fa-expand"></i>}</button>
+    <button style={{color:"white", padding:"10px",backgroundColor:"transparent",textAlign:"center",borderRadius:"10px",width:"55px", border:"none",fontSize:"2em"}} onClick={resize}>{fullscreen?<i className="fa-solid fa-compress"></i>:<i className="fa-solid fa-expand"></i>}</button>
   );
 }
 
