@@ -1,11 +1,15 @@
 import React from "react";
-
-function Practice(props){
+import Card from "./Card";
+function Home(props){
   return(
-    <h1>H</h1>
+    <div>
+      <h1>H</h1>
+      <Card module="Capital Letters" desc="Lorem ipsum" onClick={props.onClick}/>
+      <Card module="Numbers" desc="Lorem ipsum" onClick={props.onClick}/>
+    </div>
   );
 }
 
-export default Practice;
+export default Home;
 
 
