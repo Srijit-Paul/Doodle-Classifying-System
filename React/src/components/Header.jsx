@@ -1,16 +1,23 @@
 import React from "react";
 import Resize from "./Resize";
 import Back from "./Back";
+import { height } from "@mui/system";
 
 function Header(props) {
   return (
     <header
       style={{
         display: "flex",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        position: "fixed",
+        top: "0",
+        width: "95%",
+        backgroundColor: "#1a1d21",
+        color: "white",
+        height: "10vh"
       }}
     >
-      <Back goBack={props.goBack} />
+      {props.current!="Home" && <Back goBack={props.goBack} />}
       <h1
         style={{
           display: "flex",

@@ -3,9 +3,8 @@ import Card from "./Card";
 function Home(props){
   return(
     <div>
-      <h1>H</h1>
-      <Card module="Capital Letters" desc="Lorem ipsum" onClick={props.onClick}/>
-      <Card module="Numbers" desc="Lorem ipsum" onClick={props.onClick}/>
+      <Card image="./AZ.jpg" module="Capital Letters" onClick={props.onClick}/>
+      <Card image="./09.jpg" module="Numbers" onClick={props.onClick}/>
     </div>
   );
 }

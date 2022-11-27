@@ -10,7 +10,7 @@ function App() {
     let newState = state;
     console.log(state);
     if (state.current === "Practice" || state.current === "Test") {
-      newState= { current: "Menu" , exercise: state.exercise, mode: ""};
+      newState= { current: "Menu" , exercise:state.exercise, mode: state.current};
     } else if(state.current === "Menu"){
       newState= { current: "Home" , exercise: "", mode: ""};
     }
@@ -19,7 +19,7 @@ function App() {
   console.log(state)
   return (
     <div>
-      <Header goBack={goBack} />
+      <Header current={state.current} goBack={goBack} />
       <Body state={state} setState={setState}/>
     </div>
   );

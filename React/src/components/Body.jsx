@@ -16,21 +16,30 @@ function Body(props) {
     props.setState({ current: "Menu" , exercise: exercise, mode:mode});
   }
   function openEx(event){
-    console.log(event.target.value);
+    console.log(event,props.state);
     var i=event.target.value;
-    console.log(props.state);
     props.setState({ current: props.state.mode , exercise: props.state.exercise, mode: props.state.mode, i:i});
   }
-  console.log(props.state);
-  if (props.state.current === "Menu") {
-    return (<Menu state={props.state} openEx={openEx}/>);
-  } else if (props.state.current === "Practice") {
-    return (<Practice state={props.state}/>);
-  } else if (props.state.current === "Test") {
-    return (<Test state={props.state}/>);
-  } else {
-    return <Home onClick={onClick}/>;
+  
+  function currentBody(){
+    if (props.state.current === "Menu") {
+      return (<div style={{marginTop:"10vh", padding:"10px", height:"100%"}}><Menu state={props.state} openEx={openEx}/></div>);
+    } else if (props.state.current === "Practice") {
+      return (<div style={{marginTop:"10vh", padding:"10px"}}><Practice state={props.state}/></div>);
+    } else if (props.state.current === "Test") {
+      return (<div style={{marginTop:"10vh", padding:"10px"}}><Test state={props.state}/></div>);
+    } else {
+      return <div style={{marginTop:"10vh", padding:"10px"}}><Home onClick={onClick}/></div>;
+    }
   }
+
+  return(
+    <div>
+      <div style={{marginTop:"10vh", height:"100%"}}>
+        {currentBody()}
+      </div>
+    </div>
+  )
 }
 
 export default Body;
