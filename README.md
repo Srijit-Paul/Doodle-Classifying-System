@@ -33,11 +33,19 @@ character or number drawn on the canvas. The application
 will give scores on accuracy to the user and thus help them 
 learn. The classifier can be used to convert image to text as 
 a perfect use case. 
+
 ## Project Vision Scope
 
-You can view the full Vision Scope document [here]([./vision-scope.pdf](https://github.com/Srijit-Paul/Doodle-Classifying-System/blob/main/Doodle%20Classfying%20System%20Vision%20Scope.pdf)).
-## Project Vision Scope
+[![Download Vision Scope](https://img.shields.io/badge/Download-Vision--Scope-blue)](./Doodle%20Classfying%20System%20Vision%20Scope.pdf)
 
-[![Download Vision Scope](https://img.shields.io/badge/Download-Vision--Scope-blue)]([./vision-scope.pdf](https://github.com/Srijit-Paul/Doodle-Classifying-System/blob/main/Doodle%20Classfying%20System%20Vision%20Scope.pdf))
+## Demo WBS
+![WBS Diagram](./assets/WBS.png)
+## Demo RBS
+![RBS Diagram](./assets/RBS.png)
+## Demo Network Diagram
+![Network Diagram](./assets/NetworkDiagram.png)
+
+## Gantt Chart
+[![Download Gantt Chart Report](https://img.shields.io/badge/Download-Vision--Scope-blue)](./Doodle_Classifier_Project_Charts_diagram.pdf)
 
 
